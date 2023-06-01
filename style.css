@@ -1,0 +1,30 @@
+.btn-1{
+    padding: auto;
+    width: 250px;
+    height: 20px;
+}
+.afisare{
+    padding: auto;
+    margin-top: 5%;
+}
+
+label{
+    
+}
+.btn-3{
+    padding: auto;
+    width: 250px;
+    height: 20px;
+}
+
+.formular2{
+    margin: 10px;
+    padding: auto;
+}
+.formular2 .campuri {
+    width: fit-content;
+    height: auto;
+}
+ #jsonDataTable{
+
+ }

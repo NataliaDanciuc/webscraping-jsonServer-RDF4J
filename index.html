@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Front-end</title>
+ 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jsonld/dist/jsonld.min.js"></script>
+    <script src="script.js"></script>
+   
+
+</head>
+<body>
+    <button id="btnLoadData">Incarca date</button>
+    <table id="tblData">
+        <thead>
+            <tr>
+                <th>Simbol</th>
+                <th>Nume</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <button  onclick="afiseazaJSONLDData()">Afiseaza actorii filmului FAST X folosind json+ld</button> 
+    <table id="jsonldTable">
+      <thead>
+        <tr>
+          <th>Actor</th>
+        </tr>
+      </thead>
+      <tbody>
+
+      </tbody>
+    </table>
+    <label for=""> Simbol </label>
+    <input id="simbolInput" type="text"><br>
+          
+    <label for="">Nume </label>
+    <input id="numeInput" type="text"><br>
+           
+    <button onclick="insereazaJSONServer()"> Apasa pentru a efectua inserarea in json server a datelor</button>
+          
+
+    <table id="jsonDataTable">
+        <thead>
+          <tr>
+            
+            <th>Simbol</th>
+            <th>Nume</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+       
+    <button id="btnSendToRDF4J" onclick="sendToRDF()" >Apasa pentru a trimite datele in RDF si pt a le afisa</button>
+   
+    <div id="rdfDataTable">
+
+    </div>
+  <button id="deteleFromRDF" onclick="deleteFromRDF()">Sterge ultima inregistrare</button>
+  <div id="rdfAfterDeleteTable">
+
+  </div>
+
+</body>
+</html>
